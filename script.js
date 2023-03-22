@@ -44,9 +44,21 @@ const playRound = (playerChoice, computerChoice) => {
     return conclusion 
 }
 
-const playerChoice = 'rock';
+let playerChoice = window.prompt('a');
 const computerChoice = getComputerChoice();
 
-console.log(playerChoice, computerChoice)
+console.log(playerChoice)
 
-console.log(playRound(playerChoice, computerChoice));
+console.log(playRound(playerChoice, computerChoice))
+
+
+//function to run the game
+
+const game = () => {
+
+    for(i = 0; i < 5; i++) {
+        playRound(playerChoice, computerChoice)
+    } 
+}
+
+game();
