@@ -8,7 +8,7 @@ const getComputerChoice = () => {
 
 };
 
-console.log(getComputerChoice());
+
 
 const playRound = (playerSelection, computerSelection) => {
     let conclusion = 'nothing selected';
@@ -31,7 +31,11 @@ const playRound = (playerSelection, computerSelection) => {
     } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
         conclusion = 'You Win! scissors beats paper'
     }
-    console.log(conclusion)
+    console.log(playerSelection, computerSelection)
+    return conclusion
 }
 
-playRound();
+const playerSelection = 'rock';
+const computerSelection = getComputerChoice();
+
+console.log(playRound(playerSelection, computerSelection));
