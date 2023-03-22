@@ -11,8 +11,7 @@ const getComputerChoice = () => {
     } else if (randomNum === 2) {
         compChoice = 'scissors'
     }
-
-
     console.log(compChoice);
 }
+
 getComputerChoice();
